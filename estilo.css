@@ -1,0 +1,266 @@
+body {
+ 
+	font-family: "SoDo Sans SemiBold", Helvetica Neue, Helvetica, Arial,
+        sans-serif;
+		display: grid;
+		min-height:100vh;
+		grid-template-rows: auto 1fr auto;
+	}
+
+	body::-webkit-scrollbar{
+		width: 9.5px;
+	}
+
+	body::-webkit-scrollbar-thumb{
+		background-color: #331100;
+		border-radius: 4px;
+		border-right: 0.1px solid white;
+	}
+
+.imagen{
+	background-image: url(fondo.jpg);
+	background-position: center;
+	background-size: 1356px 755px;
+	height: 100vh;
+	margin-top: 4.2px;
+	margin-right: 1px;
+	background-repeat: no-repeat;
+}
+
+header .navbar-container {
+    box-shadow: 0px 4px 5px 0px rgb(70, 252, 4);
+    -webkit-box-shadow: 0px 4px 5px 0px rgba(195, 91, 16, 0.599);
+    -moz-box-shadow: 0px 4px 5px 0px rgb(255, 255, 0);
+}
+
+
+header .navbar {
+    max-width: 1250px;
+    padding: 0px;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+/*Todo fondo imagen*/
+header .navbar-left {
+    width: 35px;
+	padding: 0%;
+	margin-left: 35px;
+}
+
+header .navbar-right ul li{
+	float: right;
+	justify-content: space-between;
+	margin-right: 15px;
+	text-transform: initial;
+	font-weight: 400;
+	display: inline-flex;
+	position: relative;
+	flex-direction: row;
+}
+.menu-item{
+	color: black;
+	font-family: 'Inconsolata', monospace;
+	font-size: 1.1em;
+}
+
+header .navbar-right ul li:before{
+	content: "";
+	position: absolute;
+	bottom: -3px;
+	left: 0;
+	height: 3px;
+	width: 100%;
+	transition: 0.3s;
+	border-radius: 25px;
+	transform: scaleX(0);
+	background: #4070f4;
+	margin-bottom: -1px;
+}
+header .navbar-right ul li:hover:before{
+	transform: scaleX(1);
+}
+
+/*Título principal, "Pochoclos Cris y Vero"*/
+.titulo-pincipal{
+	font-family: 'PT Mono', monospace;
+	font-size: 2.4em;
+	bottom: 100px;
+	transition-duration: 1.2s;
+	color: rgba(0, 0, 0, 0.849);	
+	margin-right: 100px;
+	text-shadow: 4px 4px #C0C0C0;
+}
+
+.titulo-pincipal:hover{
+	color: blue;
+}
+.pochoclos{
+	font-size: 20px;
+}
+
+/*En referencia al h2*/
+.encabezado{
+	font-family: cursive;
+	background: yellow;
+	opacity: 0.9;
+	padding: 0px;
+	border: 1.5px solid black;
+	margin-top: auto;
+	margin-left: 20px;
+	margin-bottom: 40px;
+	animation-name: desplazarse;
+	animation-duration: 5s;
+	position: relative;
+	animation-iteration-count: infinite;
+	animation: bounce 300ms;
+
+	
+}
+@keyframes desplazarse {
+	from{
+      transform: translateY(0%);
+	}
+	to{
+	  transform: translateY(-100%);
+	}
+	}
+
+input{
+	margin-top: 3px;
+	margin-bottom: 4px;	
+}
+
+/*Formulario encargue de pedido*/
+.nombre{	
+	margin-left: 20px;
+}
+
+
+.direccion{
+	margin-left: 20px;
+}
+
+
+.pedido{
+	margin-left: 20px;	
+}
+
+
+.subrayado_pedido{
+	margin-right: 10px;
+}
+
+
+.cantidad{	
+	margin-left: 20px;
+}
+
+
+.subrayado_cantidad{
+	margin-right: 10px;
+}
+
+
+.enviar{
+	margin-left: 321px;
+	margin-top: 5px;
+}
+
+
+input::placeholder{
+	color: gray;
+}
+
+.fondo{
+	background-color: blue;
+}
+
+footer{
+    padding: 0px 0px;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 0px;
+	
+  
+}
+.container___footer{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+	padding: 20px;
+	background-color: #ffe0cc;
+	padding: 30px;
+	margin-bottom: 17px;
+
+}
+.box-footer{
+    display: flex;
+    justify-items: center;
+    font-family: cursive;
+    color: black;
+}
+.box-footer h2{
+	display: flex;
+	position: relative;
+	margin-left: 20px;
+	margin-bottom: 17px;
+	font-family: 'Inconsolata', monospace,
+    sans-serif;
+	
+}
+.box-footer h2::before{
+	content: "";
+	position: absolute;
+	bottom: -3px;
+	height: 3px;
+	width: 100%;
+	background: #4070f4;
+	border-radius: 25px;
+	transform: scaleX(0);
+	transition: transform 0.3s linear;
+}
+	
+
+.box-footer h2:hover:before{
+	transform: scaleX(1);
+}
+
+.box-footer a{
+    
+    padding: 10px;
+    color: black;
+    text-decoration: none; 
+    display:flex;
+    margin-left: 15px;
+}
+
+.box-footer a:hover{
+    color:#4070f4;
+
+}
+.seccion2{
+   padding: 0px 110px;
+  
+}
+.seccion3{
+    padding: 0px 110px;
+ }
+ .seccion4{
+    padding: 0px 110px;
+ }
+ .box__copyright{
+	max-width: 1200px;
+	margin: auto;
+	text-align: center;
+	padding: 0px 40px;
+	
+ }
+
