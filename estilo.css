@@ -1,0 +1,97 @@
+
+.container {
+	width: 1356px;
+	margin: 0 auto;
+	padding: 20px;
+	border-bottom: 1px solid #ffd11a;
+  }
+  
+  /* Estilos para pantallas con un ancho de página menor a 960 píxeles */
+  @media only screen and (min-width: 959px) {
+	.container footer .container___footer .box-footer{
+	  width: 80%;
+	  padding: 0px;
+	}
+  }
+
+@media screen and (min-width: 959px){
+	.imagen{
+		width: 70%;
+		margin: 0%;
+	}
+}
+
+header .navbar-container {
+    max-width: 1250px;
+    padding: 0px;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+header .navbar-right ul li{
+	float: right;
+	justify-content: space-between;
+	margin-right: 30px;
+	text-transform: initial;
+	font-weight: 400;
+	display: inline-flex;
+	position: relative;
+	flex-direction: row;
+}
+
+
+.menu-item{
+	color: black;
+	font-family: 'Inconsolata', monospace;
+	font-size: 1.1em;
+	
+}
+
+header .navbar-right ul li:before{
+	content: "";
+	position: absolute;
+	bottom: -3px;
+	left: 0;
+	height: 3px;
+	width: 100%;
+	transition: 0.3s;
+	border-radius: 25px;
+	transform: scaleX(0);
+	background: #ffd11a;
+	margin-bottom: -1px;
+}
+header .navbar-right ul li:hover:before{
+	transform: scaleX(1);
+}
+.contenedorimagen{
+	display: flex;
+	margin-top: 30px;
+
+}
+.imagen{
+	display: flex;
+	height: 480px;
+	width: 480px;
+}
+.slogan p{
+	font-size: 100px;
+	font-family: Dancing Script;
+	animation-name: animation;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+ }
+ @keyframes animation{
+	from{
+		color: black;
+	}
+	to{
+		color: #ffd11a;
+	}
+ }
+	
+
